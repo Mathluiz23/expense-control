@@ -5,19 +5,35 @@ import {
   FaRegArrowAltCircleDown,
 } from "react-icons/fa";
 
-export default function Form() {
+export default function Form({ handleAdd }) {
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState("");
   const [expense, setExpense] = useState(false);
 
+  function generateID () {
+    Math.round(Math.random() * 1000);
+  };
+  
   function addNewTransaction() {
     if (!description || !amount) {
       return 'error';
     } else if (amount < 1) {
       return 'error';
       }
+    
+    const transaction = {
+      id: generateID(),
+      description,
+      amount,
+      expense,
+    };
+
+    handleAdd(transaction);
+
+    setDescription("");
+    setAmount("");
   }
-  
+
   return (
     <>
       <Style.Container>
