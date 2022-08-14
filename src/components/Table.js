@@ -1,8 +1,15 @@
 import React from "react";
+import TableItems from "./TableItems";
 import * as Style from "../styles/StyleTable";
 
 export default function Table({ itens, setItens }) {
     
+  function onDelete (ID) {
+    const newArray = itens.filter((transaStyletion) => transaStyletion.id !== ID);
+    setItens(newArray);
+    localStorage.setItem("transaStyletions", JSON.stringify(newArray));
+  };
+
   return (
     <Style.Table>
       <Style.Thead>
@@ -16,6 +23,9 @@ export default function Table({ itens, setItens }) {
         </Style.Tr>
       </Style.Thead>
       <Style.Tbody>
+        {itens.map((item, index) => (
+          <TableItems key={index} item={item} onDelete={onDelete} />
+        ))}
       </Style.Tbody>
     </Style.Table>
   );
