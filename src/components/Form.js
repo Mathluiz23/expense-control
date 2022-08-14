@@ -10,7 +10,14 @@ export default function Form() {
   const [amount, setAmount] = useState("");
   const [expense, setExpense] = useState(false);
 
-
+  function addNewTransaction() {
+    if (!description || !amount) {
+      return 'error';
+    } else if (amount < 1) {
+      return 'error';
+      }
+  }
+  
   return (
     <>
       <Style.Container>
@@ -18,6 +25,8 @@ export default function Form() {
           <Style.Label></Style.Label>
           <Style.Input 
             placeholder="Description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
           />
         </Style.InputContent>
         <Style.InputContent>
@@ -26,6 +35,8 @@ export default function Form() {
             placeholder="Amount"
             type="number"
             min="0"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value)}
           />
         </Style.InputContent>
         <Style.RadioGroup>
@@ -34,6 +45,7 @@ export default function Form() {
             id="rIncome"
             defaultChecked
             name="group1"
+            onChange={() => setExpense(!expense)}
           />
 
           <Style.Label htmlFor="rIncome">
@@ -53,7 +65,7 @@ export default function Form() {
           </Style.Label>
 
         </Style.RadioGroup>
-        <Style.Button>Add Transaction</Style.Button>
+        <Style.Button onClick={addNewTransaction}>Add Transaction</Style.Button>
       </Style.Container>
     </>
   );
