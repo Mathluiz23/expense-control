@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import * as Style from "../styles/StyleForm"
+import * as Style from "../styles/StyleForm";
+import Table from "./Table";
 import {
   FaRegArrowAltCircleUp,
   FaRegArrowAltCircleDown,
 } from "react-icons/fa";
 
-export default function Form({ handleAdd }) {
+export default function Form({ handleAdd, transactionsList, setTransactionsList }) {
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState("");
   const [expense, setExpense] = useState(false);
@@ -13,7 +14,7 @@ export default function Form({ handleAdd }) {
   function generateID () {
     Math.round(Math.random() * 1000);
   };
-  
+
   function addNewTransaction() {
     if (!description || !amount) {
       return 'error';
@@ -83,6 +84,7 @@ export default function Form({ handleAdd }) {
         </Style.RadioGroup>
         <Style.Button onClick={addNewTransaction}>Add Transaction</Style.Button>
       </Style.Container>
+      <Table itens={transactionsList} setItens={setTransactionsList} />
     </>
   );
 };
