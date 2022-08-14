@@ -1,5 +1,5 @@
 import React from "react";
-import TableItems from "./TableItems";
+import TableItems from "./TableItens";
 import * as Style from "../styles/StyleTable";
 
 export default function Table({ itens, setItens }) {

@@ -1,12 +1,12 @@
 import React from "react";
-import * as Style from "../styles/StyleTableItems";
+import * as Style from "../styles/StyleTableItens";
 import {
   FaRegArrowAltCircleUp,
   FaRegArrowAltCircleDown,
   FaTrash,
 } from "react-icons/fa";
 
-export default function TableItems({ item, onDelete }) {
+export default function TableItens({ item, onDelete }) {
   return (
     <Style.Tr>
       <Style.Td>{item.description}</Style.Td>
