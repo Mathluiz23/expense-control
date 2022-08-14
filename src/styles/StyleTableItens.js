@@ -8,6 +8,7 @@ export const Td = styled.td`
   text-align: ${(props) => (props.alignCenter ? "center" : "start")};
   word-break: break-all;
   padding: 5px;
+  border-radius: 4px;
   background-color: rgb(235, 230, 230);
 
   svg {
