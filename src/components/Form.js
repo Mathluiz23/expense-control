@@ -80,7 +80,9 @@ export default function Form({ handleAdd, transactionsList, setTransactionsList 
 
           <Style.Label htmlFor="rIncome">
               Entry
-            <FaRegArrowAltCircleUp />
+            <FaRegArrowAltCircleUp
+              style={{color: 'green', margin: '-1px 8px', fontSize: '15px'}}
+            />
           </Style.Label>
 
           <Style.Input
@@ -91,7 +93,9 @@ export default function Form({ handleAdd, transactionsList, setTransactionsList 
 
           <Style.Label htmlFor="rExpenses">
               Exit
-            <FaRegArrowAltCircleDown/>
+            <FaRegArrowAltCircleDown
+              style={{color: 'red', margin: '-1px 8px', fontSize: '15px'}}
+            />
           </Style.Label>
 
         </Style.RadioGroup>
