@@ -1,4 +1,4 @@
-import React, {  } from "react";
+import React, { useState } from "react";
 import * as Style from "../styles/StyleForm"
 import {
   FaRegArrowAltCircleUp,
@@ -6,6 +6,9 @@ import {
 } from "react-icons/fa";
 
 export default function Form() {
+  const [description, setDescription] = useState("");
+  const [amount, setAmount] = useState("");
+  const [expense, setExpense] = useState(false);
 
 
   return (
