@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as Style from "../styles/StyleForm";
 import Table from "./Table";
+import Swal from 'sweetalert2'
 import {
   FaRegArrowAltCircleUp,
   FaRegArrowAltCircleDown,
@@ -17,10 +18,22 @@ export default function Form({ handleAdd, transactionsList, setTransactionsList 
 
   function addNewTransaction() {
     if (!description || !amount) {
-      return 'error';
+      Swal.fire({
+        title: 'Invalid values ​​for description or amount!',
+        text: 'click OK to return and fill in the fields correctly',
+        icon: 'error',
+        confirmButtonText: 'OK'
+      });
+      return;
     } else if (amount < 1) {
-      return 'error';
-      }
+      Swal.fire({
+        title: 'Invalid value, the value must be positive!',
+        text: 'click OK to return and fill in the fields correctly',
+        icon: 'error',
+        confirmButtonText: 'OK'
+      });
+      return;
+    }
     
     const transaction = {
       id: generateID(),
