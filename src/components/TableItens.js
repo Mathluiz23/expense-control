@@ -7,12 +7,13 @@ import {
 } from "react-icons/fa";
 
 export default function TableItens({ item, onDelete }) {
+  // console.log('ITEM NO TABLEITENS', item);
   return (
     <Style.Tr>
       <Style.Td>{item.description}</Style.Td>
       <Style.Td alignCenter>{item.amount}</Style.Td>
       <Style.Td alignCenter>
-        {item.expense ? (
+        {item?.expense ? (
           <FaRegArrowAltCircleDown color="red" />
         ) : (
           <FaRegArrowAltCircleUp color="green" />

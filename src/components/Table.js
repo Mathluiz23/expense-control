@@ -3,11 +3,13 @@ import TableItems from "./TableItens";
 import * as Style from "../styles/StyleTable";
 
 export default function Table({ itens, setItens }) {
+  // console.log('ITENS', itens);
     
   function onDelete (ID) {
-    const newArray = itens.filter((transaStyletion) => transaStyletion.id !== ID);
+    // console.log('ID', ID);
+    const newArray = itens.filter((transaction) => transaction.id !== ID);
     setItens(newArray);
-    localStorage.setItem("transaStyletions", JSON.stringify(newArray));
+    localStorage.setItem("transactions", JSON.stringify(newArray));
   };
 
   return (

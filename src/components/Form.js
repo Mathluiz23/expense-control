@@ -11,10 +11,9 @@ export default function Form({ handleAdd, transactionsList, setTransactionsList 
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState("");
   const [expense, setExpense] = useState(false);
+  console.log(expense);
 
-  function generateID () {
-    Math.round(Math.random() * 1000);
-  };
+  const generateID = () => Math.round(Math.random() * 1000);
 
   function addNewTransaction() {
     if (!description || !amount) {
@@ -89,6 +88,7 @@ export default function Form({ handleAdd, transactionsList, setTransactionsList 
             type="radio"
             id="rExpenses"
             name="group1"
+            onChange={() => setExpense(!expense)}
           />
 
           <Style.Label htmlFor="rExpenses">
