@@ -1,4 +1,4 @@
-<h1 align="center">🎵 Tunes - Feel The Sound 🎵</h1>
+<h1 align="center">Expense Control</h1>
 
 ## Deploy
 
