@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+<h1 align="center">🎵 Tunes - Feel The Sound 🎵</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deploy
 
-## Available Scripts
+click aqui: https://expense-control-mathluiz23.vercel.app/
 
-In the project directory, you can run:
+## 💻 Projeto
 
-### `npm start`
+Este Projeto consite em uma tabela de controle de gastos, onde você pode inserir uma descrição, valor e tipo de transação. Através das transações inseridas na tabela você tem um resumo de todos os valores de entrada, saída e o total restante entre eles.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Ações do usuário:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Inserir descrição da transação
+Inserir valor da transação
+Informar se a transação é uma entrada ou saída
+Poderá deletar as transações
+Pode ver o resumo dos totais valores, total de entrada, saída e restante entre os dois.
 
-### `npm test`
+## Demonstração
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<div align="center">
+    <img alt="gif de apresentação" src="src/images/expense-control.gif"/>
+</div>
 
-### `npm run build`
+## Habilidades
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Neste projeto, foram utilizadas as seguintes habilidades:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Utilizado `React`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Utilizar os ciclos de vida de um componente React;
 
-### `npm run eject`
+- Utilizar `Hook useEffect` para lidar com efeitos, neste projeto foi utilizado como componentDidUpdate, atualizando a cada transação realizada.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Utilizar `Hook useState` para lidar com mudanças de estado da aplicação;
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Utilizar as funcionalidade `setItem e getItem` do localStorage, para adicionar, recuperar ou excluir dados localmente.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Utilizado a biblioteca externa `Styled Componetes` para poder definir estilos baseando-se em propriedades dos componentes React.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Utilizado a biblioteca externa `sweetalert2` para gerar alertar personalizados quando alguma informação está incorreta.
 
-## Learn More
+- Utilizado a biblioteca externa `react-icons` para inserir ícons que definem os tipos de transações e para deletar transações.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Tela de pesquisa
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![App Screenshot](src/images/expenseControl.png)
 
-### Code Splitting
+## Rodando o projeto localmente
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Clone o projeto
 
-### Analyzing the Bundle Size
+```bash
+  git clone git@github.com:Mathluiz23/expense-control.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Entre no diretório do projeto
 
-### Making a Progressive Web App
+```bash
+  cd expense-control
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Instale as dependências
 
-### Advanced Configuration
+```bash
+  npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Inicie o projeto
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+  npm start
+```
