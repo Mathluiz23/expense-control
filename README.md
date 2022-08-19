@@ -1,4 +1,4 @@
-<h1 align="center">Expense Control</h1>
+<h1 align="center"> :euro: Expense Control :moneybag:</h1>
 
 ## Deploy
 
