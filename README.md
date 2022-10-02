@@ -1,6 +1,7 @@
 <h1 align="center"> :euro: Expense Control :moneybag:</h1>
 
-## Deploy
+## 🖥️📱 Deploy
+Neste link você tem acesso ao projeto disponibilizado na web.
 
 click aqui: https://expense-control-mathluiz23.vercel.app/
 
@@ -8,21 +9,25 @@ click aqui: https://expense-control-mathluiz23.vercel.app/
 
 Este Projeto consite em uma tabela de controle de gastos, onde você pode inserir uma descrição, valor e tipo de transação. Através das transações inseridas na tabela você tem um resumo de todos os valores de entrada, saída e o total restante entre eles.
 
-### Ações do usuário:
+### 👨‍💻 Ações do usuário:
 
-Inserir descrição da transação
-Inserir valor da transação
-Informar se a transação é uma entrada ou saída
-Poderá deletar as transações
-Pode ver o resumo dos totais valores, total de entrada, saída e restante entre os dois.
+ - Inserir descrição da transação.
+ 
+ - Inserir valor da transação.
+ 
+ - Informar se a transação é uma entrada ou saída.
+ 
+- Poderá deletar as transações.
 
-## Demonstração
+- Pode ver o resumo dos totais valores, total de entrada, saída e restante entre os dois.
+
+## ⏯️ Demonstração
 
 <div align="center">
     <img alt="gif de apresentação" src="src/images/expense-control.gif"/>
 </div>
 
-## Habilidades
+## 👨‍🔧 Habilidades
 
 Neste projeto, foram utilizadas as seguintes habilidades:
 
@@ -42,11 +47,12 @@ Neste projeto, foram utilizadas as seguintes habilidades:
 
 - Utilizado a biblioteca externa `react-icons` para inserir ícons que definem os tipos de transações e para deletar transações.
 
-## Tela de pesquisa
+## 👨💻 Tela onde o usuário irá inserir e controlar suas transações.
 
 ![App Screenshot](src/images/expenseControl.png)
 
-## Rodando o projeto localmente
+
+## 👨‍💻 Rodando o projeto localmente
 
 Clone o projeto
 
