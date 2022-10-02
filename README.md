@@ -7,7 +7,7 @@ click aqui: https://expense-control-mathluiz23.vercel.app/
 
 ## 💻 Projeto
 
-Este Projeto consite em uma tabela de controle de gastos, onde você pode inserir uma descrição, valor e tipo de transação. Através das transações inseridas na tabela você tem um resumo de todos os valores de entrada, saída e o total restante entre eles.
+Este Projeto consiste em uma tabela de controle de gastos, onde o usuário poderá inserir uma descrição, valor e tipo de transação. Através das transações inseridas na tabela, terá um resumo de todos os valores de entrada, saída e o total restante entre eles.
 
 ### 👨‍💻 Ações do usuário:
 
@@ -17,9 +17,9 @@ Este Projeto consite em uma tabela de controle de gastos, onde você pode inseri
  
  - Informar se a transação é uma entrada ou saída.
  
-- Poderá deletar as transações.
+ - Poderá deletar as transações.
 
-- Pode ver o resumo dos totais valores, total de entrada, saída e restante entre os dois.
+ - Pode ver o resumo dos totais valores, total de entrada, saída e restante entre os dois.
 
 ## ⏯️ Demonstração
 
